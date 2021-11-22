@@ -138,14 +138,14 @@ Here are all the properties you can define inside each monitor object:
 | `path_matches` | Array | An array of regular expressions to match processes by path. |
 | `path_excludes` | Array | An array of regular expressions to exclude processes by path. |
 | `max_mem` | Mixed | The maximum amount of process memory to allow before slapping.  Specify either bytes or a string such as "5 GB". |
-| `prompt` | Boolean | Set this to `true` if you want to be prompted by notification before slapping. |
+| `prompt` | Boolean | Set this to `true` if you want to be prompted by notification *before* slapping. |
 | `sound` | String | Which system sound to play for the prompt notification. |
 | `timeout_action` | String | If the user takes no action on the prompt, this specifies what to do when it times out.  Set this to `kill` to kill by default. |
 | `click_action` | String | This specifies what to do if the user clicks on the notification bubble.  Set this to `kill` to kill on click. |
 | `snooze_time` | String | How long to "snooze" (disable slaps) for an individual process if a slap is "snoozed" (timed out or user clicks "No"). |
 | `signal` | String | Which signal to send to the process to slap it.  This defaults to `SIGTERM` (terminate nicely). |
-| `notify` | String | Set this to `true` to send a notification when a process is slapped. |
-| `slap` | Mixed | Set this to `true` to play a "slap" sound effect when a process is slapped.  Or set this to any MP3 file path to play your own sound. |
+| `notify` | String | Set this to `true` to send a notification *after* a process is slapped. |
+| `slap` | Mixed | Set this to `true` to play a "slap" sound effect when a process is slapped.  Or set this to any MP3 file path to use your own sound. |
 
 For matching and excluding processes, case is sensitive, but only one of your regular expressions needs to match.  For example:
 

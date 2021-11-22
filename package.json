@@ -1,6 +1,6 @@
 {
 	"name": "memslap",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A simple memory monitor which prompts you to slap (kill) processes after they grow too large.",
 	"author": "Joseph Huckaby <jhuckaby@gmail.com>",
 	"homepage": "https://github.com/jhuckaby/memslap",
