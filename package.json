@@ -1,0 +1,36 @@
+{
+	"name": "memslap",
+	"version": "1.0.0",
+	"description": "A simple memory monitor which prompts you to slap (kill) processes after they grow too large.",
+	"author": "Joseph Huckaby <jhuckaby@gmail.com>",
+	"homepage": "https://github.com/jhuckaby/memslap",
+	"license": "MIT",
+	"main": "lib/main.js",
+	"bin": {
+		"memslap": "bin/control.sh"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jhuckaby/memslap"
+	},
+	"bugs": {
+		"url": "https://github.com/jhuckaby/memslap/issues"
+	},
+	"keywords": [
+		"memory",
+		"monitor",
+		"daemon"
+	],
+	"dependencies": {
+		"node-notifier": "10.0.0",
+		"pixl-boot": "file:../pixl-boot",
+		"pixl-server": "file:../pixl-server",
+		"pixl-tools": "file:../pixl-tools",
+		"play-sound": "1.1.3",
+		"systeminformation": "5.9.15"
+	},
+	"scripts": {
+		"boot": "pixl-boot install --script bin/control.sh",
+		"unboot": "pixl-boot uninstall"
+	}
+}

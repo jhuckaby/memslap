@@ -1,0 +1,27 @@
+{
+	
+	"monitors": [
+		{
+			"enabled": true,
+			"name_matches": [".+"],
+			"max_mem": "5 GB",
+			"prompt": true,
+			"sound": "Funk",
+			"timeout_action": "ignore",
+			"click_action": "kill",
+			"snooze_time": "5 minutes",
+			"signal": "SIGTERM",
+			"notify": true,
+			"slap": true
+		}
+	],
+	
+	"log_dir": "Library/Logs",
+	"log_filename": "memslap.log",
+	"log_columns": ["hires_epoch", "date", "hostname", "pid", "component", "category", "code", "msg", "data"],
+	"log_crashes": true,
+	"crash_filename": "memslap.crash.log",
+	"pid_file": "Library/Logs/memslap.pid",
+	"debug_level": 5
+	
+}
