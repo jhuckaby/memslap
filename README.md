@@ -27,12 +27,12 @@
 
 ## Features
 
-- Supports multiple rule sets so you can configure which applications have limits.
+- Supports multiple rule sets so you can customize limits for specific apps.
 - Match on the process name or filesystem path.
 - Set both inclusion and exclusion rules.
-- Applications are "rolled up" so it calculates the real total memory.
+- Child processes are "rolled up" into their parent apps so it calculates the real memory use.
 - Interactive notifications with Yes/No actions.
-- Configurable default click on notification (can kill or not).
+- Configurable default click on notification (kill or snooze).
 - Configurable notification prompt sound, and slap sound.
 - Configurable snooze.
 - Configurable kill signal.
