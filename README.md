@@ -36,6 +36,7 @@
 - Configurable notification prompt sound, and slap sound.
 - Configurable snooze.
 - Configurable kill signal.
+- Hot reloads of config file (no need to restart service).
 
 # Usage
 
@@ -144,7 +145,7 @@ Here are all the properties you can define inside each monitor object:
 | `click_action` | String | This specifies what to do if the user clicks on the notification bubble.  Set this to `kill` to kill on click. |
 | `snooze_time` | String | How long to "snooze" (disable slaps) for an individual process if a slap is "snoozed" (timed out or user clicks "No"). |
 | `signal` | String | Which signal to send to the process to slap it.  This defaults to `SIGTERM` (terminate nicely). |
-| `notify` | String | Set this to `true` to send a notification *after* a process is slapped. |
+| `notify` | Boolean | Set this to `true` to send a notification *after* a process is slapped. |
 | `slap` | Mixed | Set this to `true` to play a "slap" sound effect when a process is slapped.  Or set this to any MP3 file path to use your own sound. |
 
 For matching and excluding processes, case is sensitive, but only one of your regular expressions needs to match.  For example:
